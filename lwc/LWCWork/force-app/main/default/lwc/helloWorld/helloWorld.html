@@ -1,3 +1,9 @@
 <template>
-    
+    <lightning-card title="My First LWC" icon-name="custom:custom14">
+    <div class="slds-m-around_medium">
+        <p>Hello , {greetings}</p>
+        <lightning-input label="Name" value={greetings} onchange={eventHandle}></lightning-input>
+        <lightning-button label="Click"  onclick={dispGreetings}></lightning-button>
+    </div>
+</lightning-card>
 </template>
